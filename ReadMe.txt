@@ -42,3 +42,7 @@ Where	MATERIAL_ID 	Is a unique int number that is the ID for that markup
 			markup would be written as 0.07)
 
 Every line represents an individual markup. Only the MATERIAL_ID and MARKUP are required for the markup gem to function.
+
+_______tests_______
+
+I have included a wide variety of test cases to cover a possible inputs, improper inputs, reading differently formatted files, and errors that could occure. They are located under the tests folder.
