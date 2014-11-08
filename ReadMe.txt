@@ -37,7 +37,8 @@ MATERIAL_ID (MATERIAL_NAMES) MARKUP
 Where	MATERIAL_ID 	Is a unique int number that is the ID for that markup
 	MATERIAL_NAMES 	Is an optional parameter. It can contain words separated
 			by spaces which describe your material (e.g. food, drugs).
-			You can use as many or as few as you like
+			You can use as many or as few as you like. If names are used
+			they must also be unique.
 	MARKUP		Is the markup percentage in decimal notation (e.g a 7%
 			markup would be written as 0.07)
 
@@ -45,4 +46,24 @@ Every line represents an individual markup. Only the MATERIAL_ID and MARKUP are 
 
 _______tests_______
 
-I have included a wide variety of test cases to cover a possible inputs, improper inputs, reading differently formatted files, and errors that could occure. They are located under the tests folder.
+I have included a wide variety of test cases to cover a possible inputs, improper inputs, reading differently formatted files, and errors that could occur. They are located under the tests folder. In the each of the separate file tests, there is a different kind of error in the format of markups.txt.
+
+_______Function Descriptions: markup.rb_______
+
+getMaterialList()
+
+	This function reads in the markups.txt file and extracts the markups. 
+	It stores them in a markup object in key value pairs for easy retrieval.
+
+jobMarkUp(float basePrice, int workers, int OR string materialType)
+
+	This function calculates the total markup on the product. It returns 
+	the final price rounded to 2 decimal places.
+
+getMaterialMarkup(int OR string materialType)
+	
+	This function checks the markup objects hash of materials and markups for
+	the material ID or name. If it is not found, a markup of 0% is returned.
+
+
+
