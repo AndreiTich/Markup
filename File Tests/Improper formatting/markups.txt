@@ -1,0 +1,4 @@
+3 Drugs pharmaceuticals 0.075
+food Burgers 0.13
+634 ELECTRONICS
+63 random test stuff 0.3
